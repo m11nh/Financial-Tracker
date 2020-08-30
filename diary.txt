@@ -1,5 +1,5 @@
 date        |   Activity                    | To - Do Next
-30/08/2020  | 
+30/08/2020  | added intial documentation, work on some basic things | continue working on class diagram, and then try use some design patterns
 
 
 Goals
