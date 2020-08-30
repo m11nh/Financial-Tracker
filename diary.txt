@@ -1,6 +1,6 @@
 date        |  time     |  Activity                    | To - Do Next
-30/08/2020  |           | added intial documentation, work on some basic things | continue working on class diagram, and then try use some design patterns
-30/08/2020  |           | 
+30/08/2020  | 2hrs      | added intial documentation, work on some basic things | continue working on class diagram, and then try use some design patterns
+30/08/2020  | 1hr       | started working on classes    | complete class implementations 
 
 Goals
 - work on the idea and user requirement of my application 
