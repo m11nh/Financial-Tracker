@@ -1,0 +1,8 @@
+date        |   Activity                    | To - Do Next
+30/08/2020  | 
+
+
+Goals
+- work on the idea and user requirement of my application 
+    - brainstorm general idea, summarise in 1 sentence
+    - create user requirements, write out in documents
