@@ -6,3 +6,9 @@ class MonthlyLog():
     
     def getDailyLogs(self): 
         return self.dailyLogs
+
+    def getMonth(self): 
+        return self._month
+
+    def getYear(self): 
+        return self._year

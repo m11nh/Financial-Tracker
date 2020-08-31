@@ -5,3 +5,6 @@ class YearlyLog():
     
     def getMonthlyLogs(self): 
         return self.MonthlyLogs
+
+    def getYear(self): 
+        return self._year
