@@ -17,4 +17,4 @@ class DailyLog():
         return self._year
     
     def getLogs(self): 
-        return self.logs
+        return self._logs
