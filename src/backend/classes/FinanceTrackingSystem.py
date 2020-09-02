@@ -1,42 +1,46 @@
-from msa3.src.backend.classes.YearlyLog import YearlyLog, MonthlyLog, DailyLog
+from YearlyLog import YearlyLog
+from MonthlyLog import MonthlyLog
+from DailyLog import DailyLog
+from Log import Log
 
 class FinanceTrackingSystem: 
     def __init__(self):
         self._yearlyLogs = {} # list of yearlyLogs
     
-    def addExpense(self, e : Expense): 
+    def addLog(self, l : Log): 
         # find the year
-        if e.getYear() not in self._yearlyLogs: 
-            self._yearlyLogs[e.getYear()] = YearlyLog(e.getYear())
-        yearLog = self._yearlyLogs()[e.getYear]
+        if l.getYear() not in self._yearlyLogs: 
+            self._yearlyLogs[l.getYear()] = YearlyLog(l.getYear())
+        yearLog = self._yearlyLogs[l.getYear()]
 
         # find the month
-        if e.getMonth() not in yearLog.getMonthlyLog: 
-            year.getMonthlyLog[e.getMonth()] = MonthlyLog(e.getMonth(), e.getYear())
-        monthLog = yearLog.getMonthlyLog()[e.getMonth()] 
+        if l.getMonth() not in yearLog.getMonthlyLogs(): 
+            yearLog.getMonthlyLogs()[l.getMonth()] = MonthlyLog(l.getMonth(), l.getYear())
+        monthLog = yearLog.getMonthlyLogs()[l.getMonth()] 
             
         # find the day
-        if e.getDay() not in monthLog.getDailyLog: 
-            monthLog.getDailyLog[e.getDay()] = DailyLog(e.getDay(), e.getMonth(), e.getYear())
-        dailyLog = monthLog.getDailyLog()[e.getDay()]
+        if l.getDay() not in monthLog.getDailyLogs(): 
+            monthLog.getDailyLogs()[l.getDay()] = DailyLog(l.getDay(), l.getMonth(), l.getYear())
+        dailyLog = monthLog.getDailyLogs()[l.getDay()]
 
         # add 
-        dailyLog.append(e)
+        dailyLog.addLog(l)
 
-    def removeExpense(self, e : Expense): 
-        l = getDailyLog(e.getDay(), e.getMonth(), e.getYear())
-
-    def addIncome(self, i : Income): 
-        pass
-
-    def removeIncome(self, i : Income):
-        pass
+    def removeLog(self, l : Log): 
+        dailyLog = self.getDailyLog(l.getDay(), l.getMonth(), l.getYear())
+        dailyLog.removeLog(l)
 
     def getDailyLog(self, day, month, year): 
-        pass
+        if day not in self.getMonthlyLog(month, year).getDailyLogs():
+            self.getMonthlyLog(month, year).getDailyLogs()[day] = DailyLog(day, month, year)
+        return self.getMonthlyLog(month, year).getDailyLogs()[day]
 
-    def getMonthlyLog(self, day, month, year): 
-        pass
+    def getMonthlyLog(self, month, year): 
+        if month not in self.getYearlyLog(year).getMonthlyLogs(): 
+            self.getYearlyLog(year).getMonthlyLogs()[month] = MonthlyLog(year, month)
+        return self.getYearlyLog(year).getMonthlyLogs()[month]
 
     def getYearlyLog(self, year): 
-        pass
+        if year not in self._yearlyLogs: 
+            self._yearlyLogs[year] = YearlyLog(year)
+        return self._yearlyLogs[year]

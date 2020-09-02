@@ -1,8 +1,7 @@
 date        |  time     |  Activity                    | To - Do Next
 30/08/2020  | 2hrs      | added intial documentation, work on some basic things | continue working on class diagram, and then try use some design patterns
 30/08/2020  | 1hr       | started working on classes    | complete class implementations 
-
-Goals
-- work on the idea and user requirement of my application 
-    - brainstorm general idea, susmarise in 1 sentence
-    - create user requirements, write out in documentsds
+31/08/2020  | 1.5hr     | completed coding most classes | continue finishing off the implementation for the financetrackingsystem
+01/08/2020  | 35 min    | continued working on system functions | try to complete the system functions, then write out a set of tests
+01/08/2020  | 1.5hr     | continue working on financeTrackingSystem | complete other functions for other features especially for monthly/yearly/daily log total expense/income calculations
+02/08/2020  | 1 hour    | continue working on financeTrackingSystem | fix bug on line 25 monthlylog.py and try to complete the testing and any missing functions
