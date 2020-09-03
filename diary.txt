@@ -8,5 +8,4 @@ date        |  time     |  Activity                    | To - Do Next
 03/08/2020  | 
 
 to-do
-- re-read through my user stories to see if my backend satisfies every requirement
-- start working on the database I will be using
+- set-up routes/venv/templates https://github.com/JerryyZhu/todo_markdown/blob/master/Part%201%20-%20Setting%20up.md
