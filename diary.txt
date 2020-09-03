@@ -5,3 +5,8 @@ date        |  time     |  Activity                    | To - Do Next
 01/08/2020  | 35 min    | continued working on system functions | try to complete the system functions, then write out a set of tests
 01/08/2020  | 1.5hr     | continue working on financeTrackingSystem | complete other functions for other features especially for monthly/yearly/daily log total expense/income calculations
 02/08/2020  | 1 hour    | continue working on financeTrackingSystem | fix bug on line 25 monthlylog.py and try to complete the testing and any missing functions
+03/08/2020  | 
+
+to-do
+- re-read through my user stories to see if my backend satisfies every requirement
+- start working on the database I will be using

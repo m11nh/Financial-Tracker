@@ -16,15 +16,15 @@ class MonthlyLog():
     def totalExpenses(self): 
         s = 0
         for l in self._dailyLogs: 
-            s+=l.totalExpenses()
+            s+=self._dailyLogs[l].totalExpenses()
         return s
 
 
     def totalIncome(self): 
         s = 0
         # fix this as dailylogs is a dictionary
-        for l in self._dailyLogs: 
-            s+=l.totalIncome()
+        for l in self._dailyLogs.keys(): 
+            s+=self._dailyLogs[l].totalIncome()
         return s
 
     def netProfit(self): 

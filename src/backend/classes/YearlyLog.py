@@ -12,13 +12,13 @@ class YearlyLog():
     def totalExpenses(self): 
         s = 0
         for l in self._monthlyLogs: 
-            s+=l.totalExpenses()
+            s+=self._monthlyLogs[l].totalExpenses()
         return s
 
     def totalIncome(self): 
         s = 0
-        for l in self._monthlyLogs: 
-            s+=l.totalIncome()
+        for l in self._monthlyLogs.keys(): 
+            s+=self._monthlyLogs[l].totalIncome()
         return s
     
     def netProfit(self): 

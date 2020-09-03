@@ -23,5 +23,8 @@ sys.addLog(Income(1, 1, 2020, 100, "god shit"))
 sys.addLog(Expense(1, 1, 2020, 100, "gd shit", True))
 print(sys.getDailyLog(1, 1, 2020).netProfit())
 print(sys.getMonthlyLog(1, 2020).netProfit())
+print(sys.getYearlyLog(2020).netProfit())
+print(sys.getMonthlyLog(1, 2020).totalExpenses())
+
 
 
