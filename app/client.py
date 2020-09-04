@@ -1,0 +1,17 @@
+import pickle
+import os.path
+from app.backend.classes.FinanceTrackingSystem import FinanceTrackingSystem
+
+def pickle_update(system): 
+    pickle_out = open("system.pickle", "wb")
+    pickle.dump(system, pickle_out)
+    pickle_out.close()
+
+def start_client(): 
+    if os.path.isfile("system.pickle") == False or (os.stat("system.pickle").st_size ==0) == True: 
+        system = FinanceTrackingSystem()
+    else: 
+        pickle_in = open("system.pickle", "rb")
+        system = pickle.load(pickle_in)
+        pickle_in.close()
+    return system

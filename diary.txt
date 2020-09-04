@@ -5,7 +5,15 @@ date        |  time     |  Activity                    | To - Do Next
 01/08/2020  | 35 min    | continued working on system functions | try to complete the system functions, then write out a set of tests
 01/08/2020  | 1.5hr     | continue working on financeTrackingSystem | complete other functions for other features especially for monthly/yearly/daily log total expense/income calculations
 02/08/2020  | 1 hour    | continue working on financeTrackingSystem | fix bug on line 25 monthlylog.py and try to complete the testing and any missing functions
-03/08/2020  | 
+03/08/2020  | 1.5 hours | completed finance tracking system, working on getting basic files set up | continue to get basic files set up -> aiming to get database done
+04/08/2020  | 1 hour    | working on frontent           | continue adding frontend stuff - up to modal contents
 
 to-do
+- complete the visuals
+    - 3 sections
+        - daily 
+            - add expense button 
+            - add income button
+        - monthly
+        - yearly
 - set-up routes/venv/templates https://github.com/JerryyZhu/todo_markdown/blob/master/Part%201%20-%20Setting%20up.md
