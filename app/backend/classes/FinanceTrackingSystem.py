@@ -1,7 +1,7 @@
-from YearlyLog import YearlyLog
-from MonthlyLog import MonthlyLog
-from DailyLog import DailyLog
-from Log import Log
+from app.backend.classes.YearlyLog import YearlyLog
+from app.backend.classes.MonthlyLog import MonthlyLog
+from app.backend.classes.DailyLog import DailyLog
+from app.backend.classes.Log import Log
 
 class FinanceTrackingSystem: 
     def __init__(self):
